@@ -15,7 +15,7 @@
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
-                                <a href="#" class="button is-success"><strong>Sign up</strong></a>
+                                <a href="{% url 'signup' %}" class="button is-success"><strong>Sign up</strong></a>
                                 <a href="#" class="button">Login</a>
                             </div>
                         </div>
@@ -44,5 +44,9 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://unpkg.com/vue@3"></script>
+        {% block scripts %}
+        {% endblock scripts %}
     </body>
 </html>
